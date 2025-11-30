@@ -1,0 +1,27 @@
+# General settings
+output_dir: "instashop_output"
+combined_filename: "Instashop_Combined.xlsx"
+
+# Scrolling behavior
+# Tuned down to avoid extremely long runs; adjust higher if you need deeper pages.
+max_scroll_cycles: 60         # safety cap
+rounds_stable: 3              # stop after N cycles with no new products
+scroll_delay_min: 1.5         # seconds (min)
+scroll_delay_max: 3.5         # seconds (max)
+
+# Parallelism
+workers: 8                    # number of parallel browser workers
+
+# Input files
+category_file: "categories.txt"
+locations_file: "locations.txt"
+
+# User agents (you can add more)
+user_agents:
+  - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+  - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
+  - "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+  - "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0"
+
+# Logging
+log_dir: "instashop_logs"
