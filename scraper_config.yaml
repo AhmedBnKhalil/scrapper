@@ -6,8 +6,8 @@ combined_filename: "Instashop_Combined.xlsx"
 # Tuned down to avoid extremely long runs; adjust higher if you need deeper pages.
 max_scroll_cycles: 60         # safety cap
 rounds_stable: 3              # stop after N cycles with no new products
-scroll_delay_min: 1.5         # seconds (min)
-scroll_delay_max: 3.5         # seconds (max)
+scroll_delay_min: 5         # seconds (min)
+scroll_delay_max: 10         # seconds (max)
 
 # Parallelism
 workers: 8                    # number of parallel browser workers
